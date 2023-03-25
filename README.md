@@ -5,12 +5,13 @@ This repository includes two forms which are very similar, but one is accessible
 -   https://accessible-form.netlify.app
 -   https://inaccessible-form.netlify.app
 
-The accessible form has the following features (which are missing in the inaccessible form):
+The accessible form has the following features, which are missing in the inaccessible form:
 
 -   semantic HTML tags (heading, button, form)
+-   page regions (header, section)
 -   add alt text for images
 -   labels for inputs
--   inputs of type email and password (not just text)
+-   inputs of type email and password (not just text inputs)
 -   remove placeholders (since they are inaccessible)
 -   add outlines for interactive elements
 -   ensure high contrast for info text
@@ -18,6 +19,7 @@ The accessible form has the following features (which are missing in the inacces
 -   use aria-live for error message
 -   hide decorative images via aria-hidden
 -   accessible indicators for required fields
+-   rem units instead of pixel units
 
 All this makes the form suitable for keyboard navigation and screenreaders.
 
@@ -49,3 +51,5 @@ The tool https://wave.webaim.org/ detects the following issues:
 -   Low contrast
 -   Now heading
 -   No page regions
+
+No tool detected all issues. That being said, manual testing is always necessary. The checklist by the a11y project can be used for this purpose: https://www.a11yproject.com/checklist/
