@@ -16,6 +16,5 @@ loginButton.addEventListener("click", () => {
 		return;
 	}
 
-	window.location =
-		window.location.origin + "/inaccessible-form/dashboard";
+	window.location = window.location.origin + "/dashboard";
 });

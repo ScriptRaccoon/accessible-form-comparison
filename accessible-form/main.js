@@ -16,6 +16,5 @@ loginForm.addEventListener("submit", (e) => {
 		errorMessage.innerText = "You have to provide a password";
 		return;
 	}
-	window.location =
-		window.location.origin + "/accessible-form/dashboard";
+	window.location = window.location.origin + "/dashboard";
 });
