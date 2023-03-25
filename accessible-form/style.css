@@ -1,76 +1,94 @@
 * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
 }
 
 body {
-  font-family: Arial, sans-serif;
-  color: #222;
+	font-family: Arial, sans-serif;
+	color: #222;
 }
 
 h1 {
-  text-align: center;
-  padding-block: 1.5rem;
-  font-weight: initial;
+	text-align: center;
+	padding-block: 1.5rem;
+	font-weight: initial;
 }
 
 #loginForm {
-  width: 400px;
-  margin: 0 auto;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
+	width: 400px;
+	margin: 0 auto;
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	gap: 1.5rem;
+}
+
+label {
+	margin-bottom: -1.25rem;
 }
 
 .info {
-  color: #555;
-  display: flex;
-  gap: 0.4rem;
-  align-items: center;
-  margin-bottom: 1.25rem;
+	color: #555;
+	display: flex;
+	gap: 0.4rem;
+	align-items: center;
 }
 
 #loginIcon {
-  width: 1.5rem;
-  height: 1.5rem;
-  opacity: 0.6;
+	width: 1.5rem;
+	height: 1.5rem;
+	opacity: 0.6;
 }
 
 input {
-  width: 100%;
-  padding: 0.5rem;
-  border: 1px solid darkgreen;
-  margin-bottom: 1.25rem;
+	width: 100%;
+	padding: 0.5rem;
+	border: 1px solid darkgreen;
 }
 
 .error {
-  color: red;
-  padding-block: 1rem;
+	color: red;
 }
 
 button {
-  border: none;
-  font-family: inherit;
-  font-size: inherit;
-  color: inherit;
-  background: none;
-  outline-offset: 0.2rem;
+	border: none;
+	font-family: inherit;
+	font-size: inherit;
+	color: inherit;
+	background: none;
+	outline-offset: 0.2rem;
 }
 
 #loginButton {
-  background-color: darkgreen;
-  color: white;
-  padding: 0.6rem 1.2rem;
-  text-align: center;
-  cursor: pointer;
-  border-radius: 0.4rem;
+	background-color: darkgreen;
+	color: white;
+	padding: 0.6rem 1.2rem;
+	text-align: center;
+	cursor: pointer;
+	border-radius: 0.4rem;
 }
 
 .centered {
-  text-align: center;
+	text-align: center;
 }
 
 #softwareImage {
-  max-width: 20rem;
+	max-width: 20rem;
+}
+
+.asterisk {
+	color: #dd0000;
+}
+
+#required {
+	margin-bottom: 0.5rem;
+}
+
+.visually-hidden {
+	position: absolute;
+	width: 1px;
+	height: 1px;
+	left: -100000px;
+	overflow: hidden;
 }

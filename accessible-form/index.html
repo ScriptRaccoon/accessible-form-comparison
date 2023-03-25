@@ -1,43 +1,67 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Accessible Form</title>
-    <link rel="stylesheet" href="style.css" />
-  </head>
-  <body>
-    <h1>Accessible Form</h1>
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta
+			name="viewport"
+			content="width=device-width, initial-scale=1.0"
+		/>
+		<title>Accessible Form</title>
+		<link rel="stylesheet" href="style.css" />
+	</head>
+	<body>
+		<h1>Accessible Form</h1>
 
-    <form id="loginForm" aria-describedby="info">
-      <div class="info" id="info">
-        <img aria-hidden="true" id="loginIcon" src="icon.png" />
-        Use this form to login to our service.
-      </div>
+		<form id="loginForm" aria-describedby="info">
+			<div class="info">
+				<img
+					aria-hidden="true"
+					id="loginIcon"
+					src="icon.png"
+				/>
+				Use this form to login to our service.
+			</div>
 
-      <label for="emailInput">Email</label>
-      <input id="emailInput" type="email" />
+			<p aria-hidden="true" id="required">
+				Fields marked with <span class="asterisk">*</span> are
+				required.
+			</p>
 
-      <label for="passwordInput">Password</label>
-      <input id="passwordInput" type="password" />
+			<label for="emailInput"
+				>Email<span class="asterisk" aria-hidden="true"
+					>*</span
+				><span class="visually-hidden">required</span></label
+			>
+			<input id="emailInput" type="email" />
 
-      <button id="loginButton">Login</button>
+			<label for="passwordInput"
+				>Password<span class="asterisk" aria-hidden="true"
+					>*</span
+				><span class="visually-hidden">required</span></label
+			>
+			<input id="passwordInput" type="password" />
 
-      <div id="errorMessage" class="error" aria-live="assertive"></div>
-    </form>
+			<button id="loginButton">Login</button>
 
-    <div class="centered">
-      <img
-        src="software.png"
-        id="softwareImage"
-        alt="a person touching an app icon on a phone,
+			<div
+				id="errorMessage"
+				class="error"
+				aria-live="assertive"
+			></div>
+		</form>
+
+		<div class="centered">
+			<img
+				src="software.png"
+				id="softwareImage"
+				alt="a person touching an app icon on a phone,
         which is connected to several services:
         photos, analytics, weather, dashboards,
         search, music, gaming"
-      />
-    </div>
+			/>
+		</div>
 
-    <script src="main.js"></script>
-  </body>
+		<script src="main.js"></script>
+	</body>
 </html>
