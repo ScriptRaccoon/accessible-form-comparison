@@ -2,6 +2,9 @@
 
 This repository includes two forms which are very similar, but one is accessible while the other one is not.
 
+-   https://accessible-form.netlify.app
+-   https://inaccessible-form.netlify.app
+
 The accessible form has the following features:
 
 -   semantic HTML tags
