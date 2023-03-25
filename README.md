@@ -20,6 +20,7 @@ The accessible form has the following features, which are missing in the inacces
 -   hide decorative images via aria-hidden
 -   accessible indicators for required fields
 -   rem units instead of pixel units
+-   handle email and password error individually and link them to the respective fields via aria-describedby
 
 All this makes the form suitable for keyboard navigation and screenreaders.
 
