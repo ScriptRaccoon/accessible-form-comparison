@@ -1,20 +1,29 @@
 const loginForm = document.getElementById("loginForm");
-const errorMessage = document.getElementById("errorMessage");
 const passwordInput = document.getElementById("passwordInput");
+const passwordError = document.getElementById("passwordError");
 const emailInput = document.getElementById("emailInput");
+const emailError = document.getElementById("emailError");
 
 loginForm.addEventListener("submit", (e) => {
 	e.preventDefault();
-	errorMessage.innerText = "";
+
+	let error = false;
 
 	if (emailInput.value.length == 0) {
-		errorMessage.innerText = "You have to provide an email";
-		return;
+		emailError.innerText = "You have to provide an email";
+		error = true;
+	} else {
+		emailError.innerText = "";
 	}
 
 	if (passwordInput.value.length == 0) {
-		errorMessage.innerText = "You have to provide a password";
-		return;
+		passwordError.innerText = "You have to provide a password";
+		error = true;
+	} else {
+		passwordError.innerText = "";
 	}
+
+	if (error) return;
+
 	window.location = window.location.origin + "/dashboard";
 });

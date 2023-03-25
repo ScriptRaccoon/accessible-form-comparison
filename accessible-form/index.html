@@ -32,31 +32,51 @@
 					<span class="asterisk">*</span> are required.
 				</p>
 
-				<label for="emailInput"
-					>Email
-					<span class="asterisk" aria-hidden="true">*</span
-					><span class="visually-hidden"
-						>required</span
-					></label
-				>
-				<input id="emailInput" type="email" />
+				<div>
+					<label for="emailInput"
+						>Email
+						<span class="asterisk" aria-hidden="true"
+							>*</span
+						><span class="visually-hidden"
+							>required</span
+						></label
+					>
+					<input
+						id="emailInput"
+						type="email"
+						aria-describedby="emailError"
+					/>
 
-				<label for="passwordInput"
-					>Password
-					<span class="asterisk" aria-hidden="true">*</span
-					><span class="visually-hidden"
-						>required</span
-					></label
-				>
-				<input id="passwordInput" type="password" />
+					<p
+						id="emailError"
+						class="error"
+						aria-live="assertive"
+					></p>
+				</div>
+
+				<div>
+					<label for="passwordInput"
+						>Password
+						<span class="asterisk" aria-hidden="true"
+							>*</span
+						><span class="visually-hidden"
+							>required</span
+						></label
+					>
+					<input
+						id="passwordInput"
+						type="password"
+						aria-describedby="passwordError"
+					/>
+
+					<p
+						id="passwordError"
+						class="error"
+						aria-live="assertive"
+					></p>
+				</div>
 
 				<button id="loginButton">Login</button>
-
-				<div
-					id="errorMessage"
-					class="error"
-					aria-live="assertive"
-				></div>
 			</form>
 
 			<div class="centered">
