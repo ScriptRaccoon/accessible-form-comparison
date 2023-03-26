@@ -7,23 +7,38 @@ This repository includes two forms which are very similar, but one is accessible
 
 The accessible form has the following features, which are missing in the inaccessible form:
 
--   semantic HTML tags (heading, button, form)
--   page regions (header, main, section)
+**Basics**
+
 -   add alt text for images
--   labels for inputs
--   inputs of type email and password (not just text inputs)
+-   labels for form elements
+-   sufficient color contrast
+
+**Form elements**
+
+-   high contrast for input borders
+-   add outlines for focussed interactive elements
 -   remove placeholders (since they are inaccessible)
--   add outlines for interactive elements
--   make input borders clearly visible
--   ensure high contrast for info text
--   link the form description with aria-describedby
--   use aria-live for error message
--   hide decorative images via aria-hidden
--   accessible indicators for required fields
--   rem units instead of pixel units
--   handle email and password error individually and link them to the respective fields via aria-describedby
 -   clear action text on the login button
 -   bring the login button close to the input fields
+
+**Semantics**
+
+-   semantic HTML tags (heading, button, form)
+-   page regions (header, main, section)
+-   inputs of type email and password (not just text inputs)
+
+**Error handling**
+
+-   use aria-live for error messages so that screenreaders will read them
+-   accessible asterisk indicators for required fields
+-   handle email and password error individually
+-   link error messages to their respective fields via aria-describedby
+
+**Misc**
+
+-   link the form description with aria-describedby
+-   hide decorative images via aria-hidden
+-   rem units instead of pixel units
 
 All this makes the form suitable for keyboard navigation and screenreaders.
 
