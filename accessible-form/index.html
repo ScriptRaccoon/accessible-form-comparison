@@ -15,69 +15,71 @@
 			<h1>Accessible Form</h1>
 		</header>
 
-		<section aria-describedby="info">
-			<form id="loginForm">
-				<div class="info" id="info">
-					<img
-						alt="user icon"
-						aria-hidden="true"
-						id="loginIcon"
-						src="icon.png"
-					/>
-					Use this form to login to our services.
-				</div>
+		<main>
+			<section aria-describedby="info">
+				<form id="loginForm">
+					<div class="info" id="info">
+						<img
+							alt="user icon"
+							aria-hidden="true"
+							id="loginIcon"
+							src="icon.png"
+						/>
+						Use this form to login to our services.
+					</div>
 
-				<p aria-hidden="true" id="required">
-					Fields marked with
-					<span class="asterisk">*</span> are required.
-				</p>
+					<p aria-hidden="true" id="required">
+						Fields marked with
+						<span class="asterisk">*</span> are required.
+					</p>
 
-				<div>
-					<label for="emailInput"
-						>Email
-						<span class="asterisk" aria-hidden="true"
-							>*</span
-						><span class="visually-hidden"
-							>required</span
-						></label
-					>
-					<input
-						id="emailInput"
-						type="email"
-						aria-describedby="emailError"
-					/>
+					<div>
+						<label for="emailInput"
+							>Email
+							<span class="asterisk" aria-hidden="true"
+								>*</span
+							><span class="visually-hidden"
+								>required</span
+							></label
+						>
+						<input
+							id="emailInput"
+							type="email"
+							aria-describedby="emailError"
+						/>
 
-					<p
-						id="emailError"
-						class="error"
-						aria-live="assertive"
-					></p>
-				</div>
+						<p
+							id="emailError"
+							class="error"
+							aria-live="assertive"
+						></p>
+					</div>
 
-				<div>
-					<label for="passwordInput"
-						>Password
-						<span class="asterisk" aria-hidden="true"
-							>*</span
-						><span class="visually-hidden"
-							>required</span
-						></label
-					>
-					<input
-						id="passwordInput"
-						type="password"
-						aria-describedby="passwordError"
-					/>
+					<div>
+						<label for="passwordInput"
+							>Password
+							<span class="asterisk" aria-hidden="true"
+								>*</span
+							><span class="visually-hidden"
+								>required</span
+							></label
+						>
+						<input
+							id="passwordInput"
+							type="password"
+							aria-describedby="passwordError"
+						/>
 
-					<p
-						id="passwordError"
-						class="error"
-						aria-live="assertive"
-					></p>
-				</div>
+						<p
+							id="passwordError"
+							class="error"
+							aria-live="assertive"
+						></p>
+					</div>
 
-				<button id="loginButton">Login</button>
-			</form>
+					<button id="loginButton">Login</button>
+				</form>
+			</section>
 
 			<div class="centered">
 				<img
@@ -87,7 +89,7 @@
 						photos, analytics and search"
 				/>
 			</div>
-		</section>
+		</main>
 
 		<script src="main.js"></script>
 	</body>

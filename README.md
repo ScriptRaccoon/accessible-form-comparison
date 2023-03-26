@@ -8,7 +8,7 @@ This repository includes two forms which are very similar, but one is accessible
 The accessible form has the following features, which are missing in the inaccessible form:
 
 -   semantic HTML tags (heading, button, form)
--   page regions (header, section)
+-   page regions (header, main, section)
 -   add alt text for images
 -   labels for inputs
 -   inputs of type email and password (not just text inputs)
