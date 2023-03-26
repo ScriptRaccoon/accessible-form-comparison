@@ -8,22 +8,23 @@ loginForm.addEventListener("submit", (e) => {
 	e.preventDefault();
 
 	let error = false;
+	emailError.innerText = "";
+	passwordError.innerText = "";
 
-	if (emailInput.value.length == 0) {
-		emailError.innerText = "You have to provide an email";
-		error = true;
-	} else {
-		emailError.innerText = "";
-	}
+	setTimeout(() => {
+		if (emailInput.value.length == 0) {
+			emailError.innerText = "You have to provide an email";
+			error = true;
+		}
 
-	if (passwordInput.value.length == 0) {
-		passwordError.innerText = "You have to provide a password";
-		error = true;
-	} else {
-		passwordError.innerText = "";
-	}
+		if (passwordInput.value.length == 0) {
+			passwordError.innerText =
+				"You have to provide a password";
+			error = true;
+		}
 
-	if (error) return;
+		if (error) return;
 
-	window.location = window.location.origin + "/dashboard";
+		window.location = window.location.origin + "/dashboard";
+	}, 50);
 });
