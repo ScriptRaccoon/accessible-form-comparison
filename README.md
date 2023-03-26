@@ -53,4 +53,18 @@ The tool https://wave.webaim.org/ detects the following issues:
 -   Now heading
 -   No page regions
 
-No tool detected all issues. That being said, manual testing is always necessary. The checklist by the a11y project can be used for this purpose: https://www.a11yproject.com/checklist/
+The axe DevTools detect the following issues:
+
+-   Elements must have sufficient color contrast
+-   Images must have an alternative text
+-   Document should have one main landmark
+-   All page content should be contained by landmarks
+-   Page should contain a level-one heading
+
+No tool detected all issues. That being said, manual testing is always necessary.
+
+## Resources
+
+-   Accessibility checklist: https://www.a11yproject.com/checklist/
+-   How to Meet WCAG (Quick Reference): https://www.w3.org/WAI/WCAG21/quickref/
+-   ARIA Authoring Practices Guide: https://www.w3.org/WAI/ARIA/apg/
