@@ -42,7 +42,7 @@ input {
 	width: 100%;
 	padding: 10px;
 	outline: none;
-	border: 1px solid darkgreen;
+	border: 1px solid #ddd;
 }
 
 .error {

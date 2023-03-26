@@ -14,6 +14,7 @@ The accessible form has the following features, which are missing in the inacces
 -   inputs of type email and password (not just text inputs)
 -   remove placeholders (since they are inaccessible)
 -   add outlines for interactive elements
+-   make input borders clearly visible
 -   ensure high contrast for info text
 -   link the form description with aria-describedby
 -   use aria-live for error message
@@ -21,6 +22,8 @@ The accessible form has the following features, which are missing in the inacces
 -   accessible indicators for required fields
 -   rem units instead of pixel units
 -   handle email and password error individually and link them to the respective fields via aria-describedby
+-   clear action text on the login button
+-   bring the login button close to the input fields
 
 All this makes the form suitable for keyboard navigation and screenreaders.
 
@@ -28,14 +31,14 @@ This repository will be used for a tutorial on web accessibility.
 
 ## Automatically detected issues
 
-I tried out some tools to see if they find all the issues in the inaccessible version.
+I tried out some tools to check if they find all the issues of the inaccessible form.
 
-The following issues were found by Google Lighthouse:
+### Issues found by [Google Lighthouse](https://github.com/GoogleChrome/lighthouse)
 
 -   Images do not have `alt` attributes
 -   Background and foreground colors do not have a sufficient contrast ratio.
 
-Firefox detects much more, and these are actually the most important ones:
+### Issues found by [Firefox Accessibility checker](https://firefox-source-docs.mozilla.org/devtools-user/accessibility_inspector/)
 
 -   Content with images must be labelled
 -   Color and contrast
@@ -43,9 +46,13 @@ Firefox detects much more, and these are actually the most important ones:
 -   Form elements should have a visible text label
 -   Clickable elements must be focusable and should have interactive semantics
 
-The tool https://www.accessibilitychecker.org/ detects the issues of Chrome and the missing labels.
+### Issues found by [Accessibility Checker](https://www.accessibilitychecker.org/)
 
-The tool https://wave.webaim.org/ detects the following issues:
+-   Images do not have `alt` attributes
+-   Background and foreground colors do not have a sufficient contrast ratio.
+-   Form elements should have a visible text label
+
+### Issues found by [WAVE](https://wave.webaim.org/)
 
 -   Missing alt text
 -   Missing labels
@@ -53,7 +60,7 @@ The tool https://wave.webaim.org/ detects the following issues:
 -   Now heading
 -   No page regions
 
-The axe DevTools detect the following issues:
+### Issues found by [axe DevTools](https://www.deque.com/axe/devtools/)
 
 -   Elements must have sufficient color contrast
 -   Images must have an alternative text
