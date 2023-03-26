@@ -9,7 +9,7 @@ The accessible form has the following features, which are missing in the inacces
 
 **Basics**
 
--   add alt text for images
+-   add `alt` text for images
 -   sufficient color contrast
 
 **Form elements**
@@ -19,26 +19,26 @@ The accessible form has the following features, which are missing in the inacces
 -   add outlines for focussed interactive elements
 -   remove placeholders (since they are inaccessible)
 -   clear action text on the login button
--   bring the login button close to the input fields
+-   bring login button close to input fields
 
 **Semantics**
 
--   semantic HTML tags (heading, button, form)
--   page regions (header, main, section)
--   inputs of type email and password (not just text inputs)
+-   semantic HTML tags (`h1`, `button`, `form`)
+-   page regions (`header`, `main`, `section`)
+-   inputs with `type="email"` and `type="password"` (not `"text"`)
 
 **Error handling**
 
--   use aria-live for error messages so that screenreaders will read them
+-   use `aria-live="assertive"` for error messages
 -   accessible asterisk indicators for required fields
--   handle email and password error individually
--   link error messages to their respective fields via aria-describedby
+-   handle email and password errors individually
+-   link error messages to their respective fields via `aria-describedby`
 
 **Misc**
 
--   link the form description with aria-describedby
--   hide decorative images via aria-hidden
--   rem units instead of pixel units
+-   link the form description with `aria-describedby`
+-   hide decorative images via `aria-hidden`
+-   `rem` units instead of `px`units
 
 All this makes the form suitable for keyboard navigation and screenreaders.
 
