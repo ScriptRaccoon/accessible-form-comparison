@@ -48,16 +48,16 @@ I tried out some tools to check if they find all the issues of the inaccessible 
 
 ### Issues found by [Accessibility Checker](https://www.accessibilitychecker.org/)
 
--   Images do not have `alt` attributes
--   Background and foreground colors do not have a sufficient contrast ratio.
--   Form elements should have a visible text label
+-   Background and foreground colors do not have a sufficient contrast ratio
+-   Image elements do not have `alt` attributes
+-   Form elements do not have associated labels
 
 ### Issues found by [WAVE](https://wave.webaim.org/)
 
--   Missing alt text
--   Missing labels
--   Low contrast
--   Now heading
+-   Missing alternative text
+-   Missing form label
+-   Very low contrast
+-   No heading structure
 -   No page regions
 
 ### Issues found by [axe DevTools](https://www.deque.com/axe/devtools/)
