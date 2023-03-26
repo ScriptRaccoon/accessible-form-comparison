@@ -36,6 +36,7 @@ The accessible form has the following features, which are missing in the inacces
 
 **Misc**
 
+-   add `aria-label` to the section
 -   link the form description with `aria-describedby`
 -   hide decorative images via `aria-hidden`
 -   `rem` units instead of `px`units
