@@ -10,11 +10,11 @@ The accessible form has the following features, which are missing in the inacces
 **Basics**
 
 -   add alt text for images
--   labels for form elements
 -   sufficient color contrast
 
 **Form elements**
 
+-   labels for form elements
 -   high contrast for input borders
 -   add outlines for focussed interactive elements
 -   remove placeholders (since they are inaccessible)
